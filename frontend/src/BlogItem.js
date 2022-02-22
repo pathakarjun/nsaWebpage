@@ -5,7 +5,10 @@ export class BlogItem extends Component {
     const { title, excerpt } = this.props.blog;
     return (
       <div>
-        <h2 dangerouslySetInnerHTML={{ __html: title.rendered }}></h2>
+        <h2
+          className="text-3xl font-bold underline"
+          dangerouslySetInnerHTML={{ __html: title.rendered }}
+        ></h2>
         <div dangerouslySetInnerHTML={{ __html: excerpt.rendered }}></div>
       </div>
     );
