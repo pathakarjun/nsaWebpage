@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import BlogItem from "./BlogItem";
 import axios from "axios";
+import BlogHeader from "./BlogHeader";
 
 export class Blog extends Component {
   state = {
@@ -24,6 +25,7 @@ export class Blog extends Component {
     if (isLoaded) {
       return (
         <div>
+          <BlogHeader />
           {blog.map((blog) => (
             <BlogItem key={blog.id} blog={blog} />
           ))}
