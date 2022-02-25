@@ -9,7 +9,7 @@ function Navbar() {
   const closeMobileMenu = () => setClick(false);
 
   const showMobile = () => {
-    if (window.innerWidth <= 870) {
+    if (window.innerWidth <= 900) {
       setMobile(true);
     } else {
       setMobile(false);
@@ -70,15 +70,15 @@ function Navbar() {
           <ul
             className={
               click
-                ? "grid grid-cols-4 gap-0 justify-items-center list-none text-center w-max  mr-8 md:flex md:flex-col md:w-full md:h-screen md:absolute md:gap-7 md:top-20 md:opacity-100 md:transition-all md:duration-250 md:ease-in md:bg-secondary md:left-0 md:z-[1] md:justify-start"
-                : "grid grid-cols-4 gap-0 justify-items-center list-none text-center w-max  mr-8 md:flex md:flex-col md:w-full md:h-screen md:absolute md:gap-7 md:top-20 md:-left-full md:opacity-100 md:transition-all md:duration-250 md:ease-in md:justify-start"
+                ? "grid grid-cols-5 gap-0 justify-items-center list-none text-center w-max  mr-8 md:flex md:flex-col md:w-full md:h-screen md:absolute md:gap-7 md:top-20 md:opacity-100 md:transition-all md:duration-250 md:ease-in md:bg-secondary md:left-0 md:z-[1] md:justify-start"
+                : "grid grid-cols-5 gap-0 justify-items-center list-none text-center w-max  mr-8 md:flex md:flex-col md:w-full md:h-screen md:absolute md:gap-7 md:top-20 md:-left-full md:opacity-100 md:transition-all md:duration-250 md:ease-in md:justify-start"
             }
           >
             <li className="h-20">
               <Link
                 to="/"
                 onClick={closeMobileMenu}
-                className="text-white flex items-center px-1 py-4 h-full hover:border-b-4 hover:border-solid hover:border-white border-solid md:text-center md:p-8 md:w-full md:table md:hover:bg-white md:hover:text-secondary md:hover:rounded-none"
+                className="text-white flex items-center px-0 py-4 h-full hover:border-b-4 hover:border-solid hover:border-white border-solid md:text-center md:p-8 md:w-full md:table md:hover:bg-white md:hover:text-secondary md:hover:rounded-none"
               >
                 Home
               </Link>
@@ -87,16 +87,25 @@ function Navbar() {
               <Link
                 to="/resources"
                 onClick={closeMobileMenu}
-                className="text-white flex items-center px-1 py-4 h-full hover:border-b-4 border-white border-solid md:text-center md:p-8 md:w-full md:table md:hover:bg-white md:hover:text-secondary md:hover:rounded-none"
+                className="text-white flex items-center px-0 py-4 h-full hover:border-b-4 border-white border-solid md:text-center md:p-8 md:w-full md:table md:hover:bg-white md:hover:text-secondary md:hover:rounded-none"
               >
                 Resources
               </Link>
             </li>
             <li className="h-20">
               <Link
-                to="/blog"
+                to="/scholarship"
                 onClick={closeMobileMenu}
-                className="text-white flex items-center px-1 py-4 h-full hover:border-b-4 border-solid border-white md:text-center md:p-8 md:w-full md:table md:hover:bg-white md:hover:text-secondary md:hover:rounded-none"
+                className="text-white flex items-center px-0 py-4 h-full hover:border-b-4 border-white border-solid md:text-center md:p-8 md:w-full md:table md:hover:bg-white md:hover:text-secondary md:hover:rounded-none"
+              >
+                Scholarship
+              </Link>
+            </li>
+            <li className="h-20">
+              <Link
+                to="/blogs"
+                onClick={closeMobileMenu}
+                className="text-white flex items-center px-0 py-4 h-full hover:border-b-4 border-solid border-white md:text-center md:p-8 md:w-full md:table md:hover:bg-white md:hover:text-secondary md:hover:rounded-none"
               >
                 Blogs
               </Link>
@@ -105,7 +114,7 @@ function Navbar() {
               <Link
                 to="/createBlog"
                 onClick={closeMobileMenu}
-                className="flex items-center px-1 pr-5 py-4 h-full md:block text-center md:mx-auto md:my-auto md:rounded md:w-7/12 md:bg-transparent text-white md:px-3.5 md:py-5 md:border md:border-solid md:border-white md:transition-all md:duration-250 md:ease-in md:hover:bg-white md:hover:text-primaryb md:hover:duration-200"
+                className="flex items-center px-0 pr-3 py-4 h-full md:block text-center md:mx-auto md:my-auto md:rounded md:w-7/12 md:bg-transparent text-white md:px-3.5 md:py-5 md:border md:border-solid md:border-white md:transition-all md:duration-250 md:ease-in md:hover:bg-white md:hover:text-primaryb md:hover:duration-200"
               >
                 <button className=" lg:bg-transparent lg:border lg:border-solid lg:px-3 lg:py-3 lg:rounded-sm cursor-pointer lg:hover:bg-primary">
                   Create Blog
