@@ -11,7 +11,7 @@ export class Blog extends Component {
 
   componentDidMount() {
     axios
-      .get("/wp-json/wp/v2/posts")
+      .get("http://localhost:8000/wp-json/wp/v2/posts")
       .then((res) =>
         this.setState({
           blog: res.data,
@@ -26,10 +26,12 @@ export class Blog extends Component {
       return (
         <Fragment>
           <BlogHeader />
-          <div className="grid grid-cols-3 md:grid-cols-1">
-            {blog.map((blog) => (
-              <BlogItem key={blog.id} blog={blog} />
-            ))}
+          <div className="flex justify-center">
+            <div className=" grid grid-cols-4 xl:grid-cols-3 ss:grid-cols-2 vs:grid-cols-1 gap-16 w-max py-20">
+              {blog.map((blog) => (
+                <BlogItem key={blog.id} blog={blog} />
+              ))}
+            </div>
           </div>
         </Fragment>
       );
