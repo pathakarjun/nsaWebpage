@@ -2,13 +2,17 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     screens: {
-      xl: { max: "1279px" },
+      xl: { max: "1570px" },
       // => @media (max-width: 1279px) { ... }
 
-      lg: { min: "870px" },
+      ss: { max: "1170px" },
+
+      lg: { min: "900px" },
       // => @media (max-width: 1023px) { ... }
 
-      md: { max: "870px" },
+      md: { max: "900px" },
+
+      vs: { max: "760px" },
       // => @media (max-width: 799px) { ... }
 
       sm: { max: "639px" },
@@ -16,11 +20,10 @@ module.exports = {
     },
     extend: {
       colors: {
-        primary: "#FF7C51",
         primaryb: "#242222",
         secondary: "#424141",
       },
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/line-clamp")],
 };

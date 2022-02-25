@@ -58,7 +58,7 @@ function Navbar() {
           className="flex text-white ml-5 cursor-pointer text-[2rem] items-center justify-start"
           onClick={closeMobileMenu}
         >
-          NSA
+          Webpage
         </Link>
         <div
           onClick={handleClick}
@@ -116,7 +116,7 @@ function Navbar() {
                 onClick={closeMobileMenu}
                 className="flex items-center px-0 pr-3 py-4 h-full md:block text-center md:mx-auto md:my-auto md:rounded md:w-7/12 md:bg-transparent text-white md:px-3.5 md:py-5 md:border md:border-solid md:border-white md:transition-all md:duration-250 md:ease-in md:hover:bg-white md:hover:text-primaryb md:hover:duration-200"
               >
-                <button className=" lg:bg-transparent lg:border lg:border-solid lg:px-3 lg:py-3 lg:rounded-sm cursor-pointer lg:hover:bg-primary">
+                <button className=" lg:bg-transparent lg:border lg:border-solid lg:px-3 lg:py-3 lg:rounded-sm cursor-pointer lg:hover:bg-sky-700">
                   Create Blog
                 </button>
               </Link>
