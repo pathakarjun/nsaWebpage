@@ -103,7 +103,7 @@ function Navbar() {
             </li>
             <li className="h-20">
               <Link
-                to="/blogs"
+                to="/blog"
                 onClick={closeMobileMenu}
                 className="text-white flex items-center px-0 py-4 h-full hover:border-b-4 border-solid border-white md:text-center md:p-8 md:w-full md:table md:hover:bg-white md:hover:text-secondary md:hover:rounded-none"
               >
