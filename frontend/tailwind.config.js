@@ -2,17 +2,17 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     screens: {
-      xl: { max: "1570px" },
+      xl: { max: "1600px" },
       // => @media (max-width: 1279px) { ... }
 
-      ss: { max: "1170px" },
+      ss: { max: "1180px" },
 
-      lg: { min: "900px" },
+      lg: { min: "920px" },
       // => @media (max-width: 1023px) { ... }
 
-      md: { max: "900px" },
+      md: { max: "920px" },
 
-      vs: { max: "760px" },
+      vs: { max: "820px" },
       // => @media (max-width: 799px) { ... }
 
       sm: { max: "639px" },
