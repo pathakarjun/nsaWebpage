@@ -3,7 +3,7 @@ import axios from "axios";
 import BlogItem from "./BlogItem";
 import { isEmpty } from "lodash";
 
-function BlogHeader() {
+function Blog() {
   const latest = "";
   const general = "?categories=1";
   const jobintern = "?categories=4";
@@ -17,7 +17,7 @@ function BlogHeader() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:8000/wp-json/wp/v2/posts" + toogleState)
+      .get("/wp-json/wp/v2/posts" + toogleState)
       .then((res) => {
         setBlog(res.data);
         setIsLoaded(true);
@@ -110,4 +110,4 @@ function BlogHeader() {
   );
 }
 
-export default BlogHeader;
+export default Blog;

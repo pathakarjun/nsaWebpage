@@ -1,22 +1,11 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 function Navbar() {
   const [click, setClick] = useState(false);
-  const [mobile, setMobile] = useState(false);
 
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
-
-  const showMobile = () => {
-    if (window.innerWidth <= 900) {
-      setMobile(true);
-    } else {
-      setMobile(false);
-    }
-  };
-
-  window.addEventListener("resize", showMobile);
 
   const menuIcon = (
     <svg
@@ -66,7 +55,7 @@ function Navbar() {
         >
           <i>{click ? timesIcon : menuIcon}</i>
         </div>
-        <div className="flex h-20 w-screen justify-end">
+        <div className="flex h-20 w-screen justify-end text-base">
           <ul
             className={
               click
@@ -78,7 +67,7 @@ function Navbar() {
               <Link
                 to="/"
                 onClick={closeMobileMenu}
-                className="text-white flex items-center px-0 py-4 h-full hover:border-b-4 hover:border-solid hover:border-white border-solid md:text-center md:p-8 md:w-full md:table md:hover:bg-white md:hover:text-secondary md:hover:rounded-none"
+                className="text-white flex items-center px-0 py-4 h-full hover:border-b-4 hover:border-solid hover:border-white  border-solid md:text-center md:p-8 md:w-full md:table md:hover:bg-white md:hover:text-secondary md:hover:rounded-none"
               >
                 Home
               </Link>

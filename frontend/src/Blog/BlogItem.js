@@ -3,11 +3,12 @@ import { Link } from "react-router-dom";
 
 export class BlogItem extends Component {
   render() {
-    const { title, excerpt, date } = this.props.blog;
+    const { title, excerpt, date, id } = this.props.blog;
+
     var rDate = new Date(date);
     return (
       <div className=" relative w-[21rem] h-[27rem] overflow-hidden transition-shadow duration-300 bg-white rounded-lg shadow-lg">
-        <Link to="/">
+        <Link to={`/blogContent/${id}`}>
           <img
             src="https://images.pexels.com/photos/2408666/pexels-photo-2408666.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;w=500"
             className="object-cover w-full h-28"
