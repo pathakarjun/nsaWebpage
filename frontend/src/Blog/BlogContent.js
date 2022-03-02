@@ -18,7 +18,7 @@ export default function BlogContent() {
       .catch((err) => console.log(err));
   }, []);
 
-  const { title, date, content } = blogPage;
+  const { title, date, content, acf } = blogPage;
   var pDate = new Date(date);
   const imgUrl = `https://robohash.org/${pDate}`;
 
@@ -26,7 +26,7 @@ export default function BlogContent() {
   return (
     <Fragment>
       {isLoaded ? (
-        <div className="container w-full mx-auto pt-20">
+        <div className="container w-full mx-auto pt-20 mb-40">
           <div className="w-full px-4 text-xl text-gray-800 leading-normal">
             <Link to="/blog" className="text-base text-blue-500 font-bold">
               &lt; BACK TO BLOG
@@ -43,25 +43,19 @@ export default function BlogContent() {
               dangerouslySetInnerHTML={{ __html: content.rendered }}
             />
           </div>
-          <hr className="border-b-2 border-gray-400 mb-8 mx-4" />
-          <div className="flex w-full items-center font-sans px-4 py-12">
+          <hr className="border-b-2 border-gray-400  mx-4" />
+          <div className="flex w-full items-center font-sans px-4 py-8">
             <img
-              className=" w-24 h-24 rounded-full mr-4"
+              className=" w-16 h-16 rounded-full mr-2 -ml-4"
               src={imgUrl}
               alt="Avatar of Author"
             />
-            <div className="flex-1">
+            <div className="flex-1 mt-4">
               <p className="text-base font-bold  md:text-xl leading-none mb-2">
-                Jo Bloggerson
+                {acf.author}
               </p>
               <p className="text-gray-600 text-xs md:text-base">
-                Minimal Blog Tailwind CSS template by
-                <a
-                  className="text-green-500 no-underline hover:underline"
-                  href="https://www.tailwindtoolbox.com"
-                >
-                  TailwindToolbox.com
-                </a>
+                {acf.subtext}
               </p>
             </div>
           </div>
