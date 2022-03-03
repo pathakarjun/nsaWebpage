@@ -16,7 +16,7 @@ export default function BlogContent() {
         setIsLoaded(true);
       })
       .catch((err) => console.log(err));
-  }, []);
+  }, [id]);
 
   const { title, date, content, acf } = blogPage;
   var pDate = new Date(date);
@@ -26,7 +26,7 @@ export default function BlogContent() {
   return (
     <Fragment>
       {isLoaded ? (
-        <div className="container w-full mx-auto pt-20 mb-40">
+        <div className="container w-full mx-auto pt-20 mb-40 px-6">
           <div className="w-full px-4 text-xl text-gray-800 leading-normal">
             <Link to="/blog" className="text-base text-blue-500 font-bold">
               &lt; BACK TO BLOG
