@@ -11,7 +11,7 @@ function Blog() {
   const scitech = "?categories=5";
 
   const [toogleState, setToogleState] = useState(latest);
-  const [blog, setBlog] = useState({});
+  const [blog, setBlog] = useState([]);
   const [isLoaded, setIsLoaded] = useState(false);
   const [empty, setEmpty] = useState(false);
 
@@ -93,7 +93,7 @@ function Blog() {
       {isLoaded ? (
         <div className="flex justify-center">
           <div className=" grid grid-cols-4 xl:grid-cols-3 ss:grid-cols-2 vs:grid-cols-1 gap-10 w-max py-20 gap-y-16">
-            {blog.map((blog) => (
+            {[blog].map((blog) => (
               <BlogItem key={blog.id} blog={blog} />
             ))}
           </div>
