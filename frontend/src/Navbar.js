@@ -40,7 +40,7 @@ function Navbar() {
     </svg>
   );
   return (
-    <nav className="bg-primaryb h-20 flex items-center text-xl sticky top-0 z-[999]">
+    <nav className="bg-primaryb h-20 flex items-center text-xl sticky top-0 z-[999] shadow-2xl">
       <div className="flex h-20 w-screen items-center">
         <Link
           to="/"
