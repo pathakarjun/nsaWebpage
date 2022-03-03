@@ -11,7 +11,7 @@ function Blog() {
   const scitech = "?categories=5";
 
   const [toogleState, setToogleState] = useState(latest);
-  const [blog, setBlog] = useState([]);
+  const [blog, setBlog] = useState({});
   const [isLoaded, setIsLoaded] = useState(false);
   const [empty, setEmpty] = useState(false);
 
