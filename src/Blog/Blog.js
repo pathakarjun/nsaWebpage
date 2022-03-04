@@ -17,7 +17,7 @@ function Blog() {
 
   useEffect(() => {
     axios
-      .get("https://3.211.50.111/wp-json/wp/v2/posts" + toogleState)
+      .get("https://wordpress.nsattu.com/wp-json/wp/v2/posts" + toogleState)
       .then((res) => {
         setBlog(res.data);
         setIsLoaded(true);
