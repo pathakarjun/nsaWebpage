@@ -17,7 +17,7 @@ function Blog() {
 
   useEffect(() => {
     axios
-      .get("/wp-json/wp/v2/posts" + toogleState)
+      .get("http://3.211.50.111/wp-json/wp/v2/posts" + toogleState)
       .then((res) => {
         setBlog(res.data);
         setIsLoaded(true);
@@ -32,6 +32,7 @@ function Blog() {
 
   return (
     <div>
+      {console.log(blog)}
       <h1 className="text-5xl font-bold text-secondary text-center py-10 pt-20">
         From the blog
       </h1>
@@ -93,7 +94,7 @@ function Blog() {
       {isLoaded ? (
         <div className="flex justify-center">
           <div className=" grid grid-cols-4 xl:grid-cols-3 ss:grid-cols-2 vs:grid-cols-1 gap-10 w-max py-20 gap-y-16">
-            {blog?.map((blog) => (
+            {blog.map((blog) => (
               <BlogItem key={blog.id} blog={blog} />
             ))}
           </div>

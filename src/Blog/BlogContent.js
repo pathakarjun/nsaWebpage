@@ -10,7 +10,7 @@ export default function BlogContent() {
 
   useEffect(() => {
     axios
-      .get(`/wp-json/wp/v2/posts/${id}`)
+      .get(`http://3.211.50.111/wp-json/wp/v2/posts/${id}`)
       .then((res) => {
         setBlogPage(res.data);
         setIsLoaded(true);
