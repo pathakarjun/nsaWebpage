@@ -172,10 +172,10 @@ export default function CreateBlog() {
       </form>
       <div>
         {success && (
-          <div class="flex w-full max-w-sm mx-auto overflow-hidden bg-white rounded-lg shadow-md ">
-            <div class="flex items-center justify-center w-12 bg-blue-500">
+          <div className="flex w-full max-w-sm mx-auto overflow-hidden bg-white rounded-lg shadow-md ">
+            <div className="flex items-center justify-center w-12 bg-blue-500">
               <svg
-                class=" w-12 h-6 text-white fill-current"
+                className=" w-12 h-6 text-white fill-current"
                 viewBox="0 0 40 40"
                 xmlns="http://www.w3.org/2000/svg"
               >
@@ -183,10 +183,10 @@ export default function CreateBlog() {
               </svg>
             </div>
 
-            <div class="px-4 py-2 -mx-3">
-              <div class="mx-3">
-                <span class="font-semibold text-blue-500 ">Success</span>
-                <p class="text-sm text-gray-600">
+            <div className="px-4 py-2 -mx-3">
+              <div className="mx-3">
+                <span className="font-semibold text-blue-500 ">Success</span>
+                <p className="text-sm text-gray-600">
                   Your blog post has been submitted and will be posted shortly
                   after a review!
                 </p>
@@ -197,10 +197,10 @@ export default function CreateBlog() {
       </div>
       <div>
         {failed && (
-          <div class="flex w-full max-w-sm mx-auto overflow-hidden bg-white rounded-lg shadow-md">
-            <div class="flex items-center justify-center w-12 bg-red-500">
+          <div className="flex w-full max-w-sm mx-auto overflow-hidden bg-white rounded-lg shadow-md">
+            <div className="flex items-center justify-center w-12 bg-red-500">
               <svg
-                class="w-12 h-6 text-white fill-current"
+                className="w-12 h-6 text-white fill-current"
                 viewBox="0 0 40 40"
                 xmlns="http://www.w3.org/2000/svg"
               >
@@ -208,10 +208,10 @@ export default function CreateBlog() {
               </svg>
             </div>
 
-            <div class="px-4 py-2 -mx-3">
-              <div class="mx-3">
-                <span class="font-semibold text-red-500 ">Error</span>
-                <p class="text-sm text-gray-600 ">
+            <div className="px-4 py-2 -mx-3">
+              <div className="mx-3">
+                <span className="font-semibold text-red-500 ">Error</span>
+                <p className="text-sm text-gray-600 ">
                   Your blog post was not recieved. Please try again!
                 </p>
               </div>
