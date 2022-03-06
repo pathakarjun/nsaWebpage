@@ -25,6 +25,7 @@ export default function CreateBlog() {
         setToken(res.data.token);
       })
       .catch((err) => console.log(err));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const handleSubmit = (event) => {
