@@ -32,7 +32,6 @@ function Blog() {
 
   return (
     <div>
-      {console.log(blog)}
       <h1 className="text-5xl font-bold text-secondary text-center py-10 pt-20">
         From the blog
       </h1>
