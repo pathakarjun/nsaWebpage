@@ -19,7 +19,7 @@ export default function Resources() {
   return (
     <div>
       {isLoaded ? (
-        <div className="container w-full mx-auto pt-20 mb-40 px-6">
+        <div className="container w-full mx-auto pt-20 mb-40 px-6 md:px-2">
           {resources.map((resources) => (
             <FaqCard key={resources.id} data={resources} />
           ))}
