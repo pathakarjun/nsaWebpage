@@ -184,7 +184,7 @@ export default function CreateBlog() {
               </svg>
             </div>
 
-            <div className="px-4 py-2 -mx-3">
+            <div className="px-4 py-2 -mx-3 border-r-4 border-blue-500">
               <div className="mx-3">
                 <span className="font-semibold text-blue-500 ">Success</span>
                 <p className="text-sm text-gray-600">
@@ -209,7 +209,7 @@ export default function CreateBlog() {
               </svg>
             </div>
 
-            <div className="px-4 py-2 -mx-3">
+            <div className="px-4 py-2 -mx-3 border-r-4 border-red-500">
               <div className="mx-3">
                 <span className="font-semibold text-red-500 ">Error</span>
                 <p className="text-sm text-gray-600 ">

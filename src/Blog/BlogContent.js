@@ -22,7 +22,6 @@ export default function BlogContent() {
   var pDate = new Date(date);
   const imgUrl = `https://robohash.org/${pDate}`;
 
-  console.log(pDate);
   return (
     <Fragment>
       {isLoaded ? (
@@ -39,7 +38,7 @@ export default function BlogContent() {
               Published on {pDate.toDateString()}
             </p>
             <p
-              class="py-10 space-y-10"
+              className="py-10 space-y-10"
               dangerouslySetInnerHTML={{ __html: content.rendered }}
             />
           </div>

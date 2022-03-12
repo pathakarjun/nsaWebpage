@@ -3,6 +3,8 @@ import Navbar from "./Navbar";
 import Blog from "./Blog/Blog";
 import BlogContent from "./Blog/BlogContent";
 import CreateBlog from "./CreateBlog";
+import Resources from "./Resources";
+import Scholarship from "./Scholarship";
 
 function App() {
   return (
@@ -13,6 +15,8 @@ function App() {
           <Route path="/blog" element={<Blog />} />
           <Route path="/blogContent/:id" element={<BlogContent />} />
           <Route path="/createBlog" element={<CreateBlog />} />
+          <Route path="/resources" element={<Resources />} />
+          <Route path="/scholarships" element={<Scholarship />} />
         </Routes>
       </Router>
     </div>
