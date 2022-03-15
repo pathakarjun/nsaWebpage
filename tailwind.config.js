@@ -11,11 +11,13 @@ module.exports = {
       // => @media (max-width: 1023px) { ... }
 
       md: { max: "920px" },
+      ms: { max: "780px" },
 
       vs: { max: "820px" },
       // => @media (max-width: 799px) { ... }
 
       sm: { max: "639px" },
+      vm: { max: "490px" },
       // => @media (max-width: 639px) { ... }
     },
     extend: {
