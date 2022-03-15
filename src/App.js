@@ -5,6 +5,7 @@ import BlogContent from "./Blog/BlogContent";
 import CreateBlog from "./CreateBlog";
 import Resources from "./Resources";
 import Scholarship from "./Scholarship";
+import Home from "./Landing Page/Home";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
+          <Route path="/" element={<Home />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/blogContent/:id" element={<BlogContent />} />
           <Route path="/createBlog" element={<CreateBlog />} />
